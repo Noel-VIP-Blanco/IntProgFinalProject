@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=Converter
+comment0.target=FileConverter
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=e

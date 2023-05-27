@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 import java.util.EventListener;
 import java.io.File;
 import java.util.Scanner;
-public class Converter implements ActionListener{
+public class FileConverter implements ActionListener{
     private static JLabel title, url;
     private static JFrame frame;
     private static JTextField urlTextField;
@@ -162,7 +162,7 @@ public class Converter implements ActionListener{
                     for (String line : linesFromTextArea) {
                         output.write(line + "\n");
                     }
-                    JOptionPane.showMessageDialog(null, "Converted to CSV file successfully","Successful",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Converted to CSV file successfully","CSV File",JOptionPane.INFORMATION_MESSAGE);
                     output.close();
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, ex.toString(),"Error",JOptionPane.WARNING_MESSAGE);
@@ -201,7 +201,7 @@ public class Converter implements ActionListener{
                     }
                     output.write("</Document>");
                     
-                    JOptionPane.showMessageDialog(null, "Converted to XML file successfully","Successful",JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Converted to XML file successfully","XML File",JOptionPane.INFORMATION_MESSAGE);
                     output.close();
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, ex.toString(),"Error",JOptionPane.WARNING_MESSAGE);
